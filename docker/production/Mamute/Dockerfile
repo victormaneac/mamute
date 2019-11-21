@@ -8,7 +8,7 @@ ENV VERSION=1.5.0 USER=mamute PASSWORD=Shei6cea DB=db/mamute_db
 RUN mkdir /mamute
 WORKDIR /mamute
 
-RUN wget -nv https://github.com/caelum/mamute/releases/download/v${VERSION}/mamute-${VERSION}.war && \
+RUN wget -nv https://github.com/victormaneac/mamute.git/releases/download/v${VERSION}/mamute-${VERSION}.war && \
     unzip mamute-${VERSION}.war && \
     rm mamute-${VERSION}.war
 
